@@ -1,0 +1,84 @@
+/*Structure*/
+body{
+    background-color: #c89f9c;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: url(images/coffee\ background.jpg);
+}
+/*Navigation*/
+#main-nav a{
+    text-decoration: none;
+    color:black;
+    background: #eed7c5;
+    padding: 5px;
+    border-radius: 2px;
+}
+#main-nav a:hover{
+    background: white;
+}
+/*Images*/
+img{
+    border: 3px solid #b36a5e;
+    border-radius: 3px;
+}
+/*Table*/
+table
+{
+    border-collapse: collapse;
+    font-family:'Courier New', Courier, monospace;
+}
+th, td{
+    border: 3px solid #b36a5e;
+    padding: 3px;
+}
+th{
+    background: #b36a5e;
+}
+td{
+    background: #eed7c5;
+}
+
+/*Typography*/
+h1{
+    font-family: 'Courier New', Courier, monospace;
+    color:black;
+}
+#header2
+{
+    font-family: 'Courier New', Courier, monospace;
+    color:black;
+    background-color: #eed7c5;
+    width: 80%;
+    margin: auto;
+    padding: 15px;
+    
+    
+}
+#header3
+{
+    font-family: 'Courier New', Courier, monospace;
+    color:black;
+    background-color: #eed7c5;
+    width:80%;
+    margin: auto;
+    padding: 5px;
+    
+     
+}
+h2{
+    font-family: 'Courier New', Courier, monospace;
+    color:black;
+}
+p{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #eed7c5;
+    color:black;
+    font-weight: bold;
+    width:80%;
+    margin: auto;
+    padding: 20px;
+   
+}
+h3{
+    font-family: 'Courier New', Courier, monospace;
+    color:black;
+}
