@@ -1,0 +1,67 @@
+/*Structure*/
+body{
+    background-color: white;
+}
+h1{
+    text-align: center;
+}
+#main-header{
+    background-color: blueviolet;
+}
+#main-content{
+    background-color: lavender;
+}
+#main-footer{
+    background-color: blanchedalmond;
+}
+.padded-area
+{
+    padding:5px;
+    margin:auto;
+}
+.info{
+    border:3px solid yellow;
+    background: lightblue;
+}
+.info header{
+    background-color: burlywood;
+    margin: 0 auto;
+}
+/*Main Navigation*/
+#main-nav li{
+    list-style-type:none;
+   /* display:inline-block;*/
+}
+#main-nav ul{
+    padding-left: 0px;
+
+}
+#main-nav a {
+        text-decoration: none;
+        color: white;
+}
+#main-nav a:hover{
+    border-bottom:4px solid palevioletred;
+    font-size: x-large;
+}
+/*Typography*/
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/*Larger Resolution*/
+@media only screen and (min-width: 708px){
+    body{
+        background-color:  red;
+    }
+    #main-nav li{
+        list-style-type:none;
+       display:inline-block;
+    }
+    .columns{
+        display: flex;
+    }
+    .col1of2{
+        flex:2;
+    }
+}

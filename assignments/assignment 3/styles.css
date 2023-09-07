@@ -1,0 +1,118 @@
+/*Structure*/
+body{
+    background-color: plum;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: oblique;
+}
+#main-header{
+    background-color: pink;
+    border-radius:15px 15px 0 0;
+}
+#main-content{
+    background:lightsalmon;
+    text-align: center;
+    border-radius: 7px;
+    padding: 2px;
+}
+#main-footer{
+    background: pink;
+    text-align: center;
+    padding: 2px;
+}
+.image{
+    margin:5px;
+    padding: 8px;
+    background-color: purple;
+    display: inline-block;
+}
+.column{
+    padding: 5px;
+    margin: 5px;
+    border-radius:2px;
+}
+.side-bar{
+    padding: 5px;
+    margin: 5px;
+    border-radius:2px;
+    background-color: plum;
+}
+.col1of2{
+    background-color: lightpink;
+}
+.col1of3, .col2of3{
+    background-color: magenta;
+}
+.col1of4, .col2of4{
+    background-color: lightcoral;
+}
+/*Main Navigation*/
+#main-nav ul{
+    padding-left: 0px;
+
+}
+#main-nav li{
+    padding: 25px;
+    list-style-type:none;
+    display:inline-block;
+    background-color: blueviolet;
+    
+}
+#main-nav a {
+        text-decoration: none;
+        color: black;
+        padding: 7px;
+        background: plum;
+        border-radius: 3px;
+}
+#main-nav a:hover{
+    border-bottom:4px solid palevioletred;
+}
+/*Typography*/
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#main-header h1{
+    text-align: center;
+}
+.header h2{
+    color: black;
+    text-align: left;
+}
+.header h4{
+    color: black;
+    text-align: left;
+    text-decoration: underline;
+}
+.side-bar li{
+ padding: none;
+ list-style-type: none;
+}
+.side-bar{
+    text-align: center;
+    margin:10px;
+}
+#main-footer h4 h2{
+ text-align: center;
+}
+/*Larger Resolutions*/
+@media (min-width:800px){
+    #main-nav ul, .flex-container{
+       display: flex;
+    }
+    #main-nav li,
+    .col1of2, 
+    .col1of3,
+    .col1of4{
+        flex: 1;
+    }
+    .col2of3, .col2of4{
+        flex:2;
+    }
+    .header, .side-bar{
+        flex :2;
+    }
+    .image{
+        flex: 1;
+    }
+    
+}
