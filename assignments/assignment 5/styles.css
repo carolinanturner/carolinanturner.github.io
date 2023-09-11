@@ -1,0 +1,104 @@
+/*Carolina Turner*/
+/*Body*/
+#title{
+   background-color: maroon;
+}
+#header{
+   background-color: white;
+}
+#search-bar{
+   background-color:black;
+}
+
+.div-1-bg{
+   width:200%;height:200%;background:url(images/research1.jpg);display:block;position:absolute;
+}
+/*Structure*/
+.uofsc{
+   margin-left: 70px;
+}
+#text, #logo{
+   display: inline-block;
+}
+#text h3, h2{
+   display: block;
+}
+.div-1-bg #title{
+   margin-left: 4px;
+   margin-top: 450px;
+   width: 30%;
+   background-color: maroon;
+   margin-left: 90px;
+}
+#flex-container-1 #header, #flex-container-2 #header{
+   background-color: white;
+}
+#flex-container-1 #header, #flex-container-2 #header{
+   padding:50px;
+   width: 50%;
+   margin-bottom:0px ;
+   margin-right: 250px;
+}
+
+/*Navigation*/
+#main-nav{
+   background-color: maroon;
+   padding: 15px;
+}
+#main-nav a{
+   font-family: fantasy;
+   font-weight: 45;
+   margin: 45px;
+   font-size: larger;
+   text-decoration: none;
+   color:white;
+}
+#main-nav a:hover{
+   background: red;
+   padding:5px;
+}
+
+/*Typography*/
+#search-bar h2, h3{
+   color: white;
+}
+.uofsc h3, h2{
+   font-weight: lighter;
+}
+.div-1-bg #title h1{
+   font-family: fantasy;
+   color: white;
+   padding: 3px;
+   font-size: 70px;
+   margin-left: 20px;
+   font-weight: 50;
+}
+.div-1-bg #flex-container-1 #header .line-1 h2, #flex-container-2 .line-1 h2{
+   font-family: sans-serif;
+   color:black;
+   font-weight: bold;
+   text-align: center;
+   margin-left: 40px;
+   width: 75%;
+}
+#flex-container-1 .subheader h4, #flex-container-2 .subheader h4 {
+   font-family: sans-serif;
+   font-weight: lighter;
+   color:black;
+   text-align: center;
+   margin-left: 40px;
+   width: 75%;
+}
+/*Larger Resolutions*/
+@media (min-width:800px){
+   #main-nav ul, .flex-container-1, .flex-container-2{
+      display: flex;
+   }
+   #main-nav li,
+   .flex-container-1, .flex-container-2{
+       flex: 1;
+   }
+ 
+}
+
+
