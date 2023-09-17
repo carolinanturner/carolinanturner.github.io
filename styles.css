@@ -72,6 +72,7 @@ ul{
     }
    #content .col1of4{
         flex: 1;
+        display: flex;
     }
     .header{
         flex :2;

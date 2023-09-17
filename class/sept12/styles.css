@@ -1,0 +1,9 @@
+.special {
+    background-color: aqua;
+    padding: 10px;
+    border: 2px dashed salmon;
+    color: magenta;
+}
+.hide{
+    display: none;
+}
