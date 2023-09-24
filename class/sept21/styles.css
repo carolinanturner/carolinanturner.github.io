@@ -1,0 +1,14 @@
+/*structure*/
+:root{
+     --primary:blue;
+     --secondary:green;
+     --tertiary: black;
+     --back:grey;
+}
+
+body{
+    background-color: var(--back);
+}
+#main-header{
+    background-color:beige
+}

@@ -1,0 +1,54 @@
+/*Carolina Turner CSCE 242 */
+/*body*/
+body{
+    background-color: greenyellow;
+}
+#main-header{
+    background-color: aquamarine;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+#main-content{
+    background-color: blueviolet;
+}
+/*ex1*/
+#ex1-header{
+    text-align: center;   
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#ex1{
+    background-color: pink;
+    list-style-type: none;
+    margin-left: 250px;
+    width: 60%;
+    padding: 5px;
+}
+/*ex2*/
+#ex2-header{
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#ex2{
+    background-color: pink;
+    list-style-type: none;
+    margin-left: 250px;
+    width: 60%;
+    padding: 5px;
+}
+/*structure*/
+#button-layout{
+    display: inline-block;
+    text-align: center;
+}
+/*buttons*/
+.hide{
+    display: none;
+}
+#button-ex1{
+    margin-top: 15px;
+    margin-left: 15px;
+}
+#button-ex2{
+    margin-top: 15px;
+    margin-left: 15px;
+}
