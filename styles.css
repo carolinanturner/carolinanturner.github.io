@@ -3,29 +3,47 @@ body{
     font-family: 'Courier New', Courier, monospace;
     background: url(images/index\ background.jpg);
 }
+.name h2{
+    text-align: left;
+}
 #header .name{
     font-family: monospace;
-    color:#9c89b8;
+    color: #3f2d59;
     font-style: oblique;
     text-align: left;
 }
 #header .title{
     font-family: monospace;
-    color:#9c89b8;
+    color: #3f2d59;
     text-align: center;
+}
+#header .title h1{
+    font-size: 40px;
+}
+#header .title h1, h2{
+    font-family: monospace;
+    color: #3f2d59;
+    text-align: center;
+    font-size: 400;
 }
 #content, #header{
     background-color: #b8bedd;
     width:95%;
     padding: 5px;
-    border: radius 50px;
     box-shadow:10px 10px #f0a6ca; 
+}
+.col1of4 img{
+    margin-left: 50px;
+}
+.col1of4 h1{
+    text-align: center;
 }
 #content .description
 {
     text-align: center;
     background-color: #f0a6ca;
-    width: 90%;
+    width: 70%;
+    margin: auto;
     border-radius: 10px;
     box-shadow:10px 10px #b8bedd;
 }
@@ -33,16 +51,19 @@ body{
     background-color: #9c89b8;
     padding: 12px;
     display: inline-block;
-    width: 60%;
     margin: 15px;
-    border-radius:2px;
+    border-radius:15px;
     box-shadow:5px 5px #f0a6ca; 
 }
 #content .flex-container .col1of4 h4{
     background-color: #f0a6ca;
     font-family: monospace;
     color: black;
-    width: 90%;
+    margin: auto;
+    text-align: center;
+    border-radius: 10px;
+    padding: 2px;
+    width: 70%;
 }
 .col1of4{
     display: inline-block;
@@ -59,7 +80,13 @@ a{
 #content h2{
     font-family: monospace;
     color:#9c89b8;
+    font-weight: 400;
     font-style: oblique;
+}
+#section-header h2{
+    color: #3f2d59;
+    font-size: 30px;
+    font-weight: 700;
 }
 ul{
     font-family: monospace;
