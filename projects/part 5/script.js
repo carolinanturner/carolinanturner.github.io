@@ -1,6 +1,6 @@
 //Carolina Turner CSCE 242
 const getCourses = async ()=>{
-    const url = "projects/part5/json/courses.json";
+    const url = "https://carolinanturner.github.io/projects/part%205/json/courses.json";
 
     try {
         const response = await fetch(url);
@@ -28,20 +28,12 @@ const getCourseItem=(course)=>{
 
     let ul = document.createElement("ul");
     section.append(ul);
-    ul.append(getLi(`Course Title: ${course.title}`));
     ul.append(getLi(`Course Code: ${course.code}`));
     ul.append(getLi(`Year Taken: ${course.year}`));
     ul.append(getLi(`Semester Taken: ${course.semester}`));
     ul.append(getLi(`Professor: ${course.professor}`));
     ul.append(getLi(`Course Description: ${course.description}`));
     section.classList.add("course");
-
-    let img = document.createElement("img");
-    img.src = "https://portiaportia.github.io/json/" + movie.img;
-    img.classList.add("zoom");
-    ul.append(img);
-    
-    ul.append(getLi(`Description: ${movie.description}`));
 
     return section;
 }
@@ -55,5 +47,5 @@ const getLi = data=>{
 
 
 window.onload= ()=>{
-    showMovies();
+    showCourses();
 }

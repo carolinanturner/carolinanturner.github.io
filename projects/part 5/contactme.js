@@ -1,11 +1,15 @@
 //Carolina Turner CSCE 242
 const showEmailResult = async (e) => {
   e.preventDefault();
-  document.getElementById("success").classList.remove("hidden");
-  const result = document.getElementById("success");
+  document.getElementById("result").classList.remove("hidden");
+  const firstName=document.getElementById("name").value;
+  const email=document.getElementById("email").value;
+  const subjectMatter=document.getElementById("message").value;
   let response = await getEmailResult();
   if (response.status == 200) {
-    result.innerHTML = "Form succesfully submitted";
+    result.innerHTML = "Your contact form=" 
+    + "First & Last Name: " +firstName + 
+    "Email : "+email  + "Subject Matter : " +subjectMatter;
   } else {
     result.innerHTML = "Sorry, your email was not sent.";
   }
@@ -13,11 +17,12 @@ const showEmailResult = async (e) => {
 
 
 const getEmailResult = async (e) => {
+  e.preventDefault();
   const form = document.getElementById("contact-me");
   const formData = new FormData(form);
   const object = Object.fromEntries(formData);
   const json = JSON.stringify(object);
-  const result = document.getElementById("success");
+  const result = document.getElementById("result");
   result.innerHTML = "Please wait...";
 
   try {
@@ -32,9 +37,12 @@ const getEmailResult = async (e) => {
     return response;
   } catch (error) {
     console.log(error);
-    document.getElementById("success").innerHTML =
+    document.getElementById("result").innerHTML =
       "Sorry your email couldn't be sent";
   }
 };
 
-document.getElementById("contact-me").onsubmit = showEmailResult;
+window.onload = () =>{
+  document.getElementById("submit").onclick=showEmailResult;
+
+}
